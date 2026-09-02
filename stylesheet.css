@@ -256,7 +256,7 @@ header {
 .menu-title h2 {
   position: absolute;
   top: 130px;
-  right: -100px;
+  left: -100px;
   font-size: 210px; 
   transform: rotate(90deg);
   color: rgba(0, 0, 0, 0.04);
@@ -267,7 +267,7 @@ header {
   position: absolute;
   z-index: 1;
   top: 90px;
-  left: -220px;
+  right: -170px;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -281,7 +281,7 @@ header {
   background-color: black;
   position: absolute;
   z-index: 2;
-  right: 50px;
+  left: 0px;
   top: 350px;
 
 }
@@ -291,7 +291,7 @@ header {
   color: white;
   display: flex;
   gap: 40px;
-  top: 35px;
+  top: 390px;
   left: 40px;
 }
 .menu-left {
@@ -333,7 +333,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 35px;
-  padding: 50px 0;
+  padding: 80px 0;
   padding-left: 80px;
 }
 .style-images {
@@ -361,7 +361,6 @@ header {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease;
 }
-
 .style:hover{
   transform: translateY(-15px);
 }

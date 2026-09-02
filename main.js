@@ -26,13 +26,13 @@ const btnRight = document.querySelector(".btn-right");
 const staffScroll = document.querySelector(".staff-scroll");
 btnRight.addEventListener("click",function(){
     staffScroll.scrollBy({
-    left: 900,
+    left: staffScroll.clientWidth,
     behavior:"smooth"
 });
 });
 btnLeft.addEventListener("click",function(){
     staffScroll.scrollBy({
-    left: -900,
+    left: -staffScroll.clientWidth,
     behavior:"smooth"
 });
 });
@@ -40,7 +40,6 @@ const btnView = document.querySelector(".btn-view");
 const moreStyle = document.querySelector(".more-style");
 btnView.addEventListener("click", ()=>{
     moreStyle.classList.toggle("show");
-    behavior:"smooth"
 });
 
 const menuImages = document.querySelectorAll(".menu-img");
@@ -61,7 +60,9 @@ const observer = new IntersectionObserver((entries) => {
             link.classList.remove("active");
         });
     const activeLink = document.querySelector(`a[href="#${id}"]`);
+    if (activeLink) {
     activeLink.classList.add("active");
+        }
         }
     });
     },

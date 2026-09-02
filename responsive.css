@@ -1,7 +1,7 @@
 @media (max-width:1023px) {
-    .hamburger {
-        display: none;
-    }   
+    section {
+        scroll-margin-top: 50px;
+    } 
     .container {
         width: 80%;
   } 
@@ -20,7 +20,7 @@
         width: 200px;
         height: calc(100vh - 50px);
     }
-    
+
     .header-list.active {
         transform: translateX(0);
         padding-top: 80px;
@@ -35,6 +35,9 @@
     .header-list.active a {
         color: white;
     }
+     .header-list a.active {
+        border-bottom: 0;
+    }
     .hamburger {
         position: fixed;
         right: 10px;
@@ -72,10 +75,10 @@
     .btn-book {
         display: inline;
         background-color: transparent;
-        border-radius: none;
-        padding: none;
+        border-radius: 0;
+        padding: 0;
     }
-     .top-image {
+    .top-image {
         height: 100%;
         object-fit: cover;
         object-position: center;
@@ -83,6 +86,188 @@
     .top-title h1 {
         font-size: 70px;
     }
+    .concept-wrapper {
+        height: 600px;
+        padding-top: 60px;
+    }
+    .concept-title h2 {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.7);
+        top: 80px;
+        right: 0px;
+        transform: rotate(90deg);
+        z-index: 4;
+    }
+    .concept-title h2::before {
+        content:"01 ┃ "
+    }
+    .concept-images {
+        top: 20px;
+        left: -120px;
+    }
+    .concept-img {
+        width: 650px;
+    }
+    .concept-square {
+        bottom: 100px;
+        right: -30px;
+        width: 250px;
+        height: 300px;
+    }
+    .concept-text {
+        bottom: 140px;
+        right: 0px;
+        width: 200px;
+    }
+    .concept-text h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .concept-text p {
+        font-size: 15px;
+    }
+    .staff-wrapper {
+        height: 500px;
+    }
+    .staff-title h2 {
+        font-size: 20px; 
+        z-index: 1; 
+        top: 70px;
+        left: 0px;
+        transform: rotate(90deg);
+        color: rgba(0, 0, 0, 0.7);   
+    }
+    .staff-title h2::before {
+        content:"02 ┃ "
+    }
+    .staff-slider {
+        position: relative;
+        padding-top: 60px;
+        padding-left: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .staff-scroll {
+        width: 500px;
+    }
+    .staff-img {
+        width:200px;
+    }
+    .menu-wrapper {
+        height: 650px;
+    }
+    .menu-wrapper .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-title h2 {
+        top: 60px;
+        right: 0px;
+        left: auto;
+        transform: rotate(90deg);
+        font-size: 20px; 
+        color: rgba(0, 0, 0, 0.7); 
+    }
+    .menu-title h2::before {
+        content:"03 ┃ "
+    }
+    .menu-img {
+        width: 650px;
+        top: 90px;
+        left: -170px;
+    }
+    .menu-square {
+        left: auto;
+        top: 190px;
+        right: -10px;
+        bottom: auto;
+        width: 230px;
+        height: 400px;
+    }
+    .menu-list {
+        color: white;
+        gap: 20px;
+        left: auto;
+        top: 207px;
+        right: 20px;
+        flex-direction: column;
+    }
+    .menu-left h3 {
+        font-size: 18px;
+    }
+    .menu-left p {
+        font-size: 15px;
+    }
+    .menu-right h3{
+        font-size: 18px;
+    }
+    .menu-right p{
+        font-size: 15px;
+    }
+    .style-wrapper {
+      min-height: 400px;
+    }
+    .style-title h2 {
+        font-size: 20px;
+        transform: rotate(90deg);
+        color: rgba(0, 0, 0, 0.7);
+        top: 60px;
+        left: 0px;
+        z-index: 1;
+    }
+    .style-title h2::before {
+        content:"04 ┃ "
+    }
+    .style-list {
+        padding: 50px 0;
+        padding-left: 70px;
+        padding-right: 60px;
+    }
+    .style-images,
+    .more-style {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .style {
+        width: 250px;
+    }
+    .style:hover{
+        transform: none;
+    }
+    .more-style.show {
+        max-height: 800px;
+    }
+    .access-wrapper {
+        height: 450px;
+    }
+    .access-title h2 {
+        font-size: 20px;
+        bottom: auto;
+        top: 80px;
+        right: 0px; 
+        color: rgba(0, 0, 0, 0.7);
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+    .access-title h2::before {
+        content:"04 ┃ "
+    }
+    .access-contents {
+        display: flex;
+        padding-left: 0;
+        padding-top: 70px;
+        gap: 50px;
+    }
+    .access-address {
+        font-size: 15px;
+    }
+    .access-address h3 {
+        font-size: 20px;
+    }
+    .access-map img {
+        width: 300px;
+    }
+
 }
 @media(max-width:767px) {
     .container {
@@ -95,7 +280,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        border: none;
+        border: 0;
         background: none;
         width: 50px;
         height: 50px;
@@ -125,8 +310,8 @@
     .btn-book {
         display: inline;
         background-color: transparent;
-        border-radius: none;
-        padding: none;
+        border-radius: 0;
+        padding: 0;
     }
      .top-image {
         object-position: center;
@@ -140,7 +325,196 @@
     }
     .top-title h1 {
         font-size: 40px;
+        letter-spacing: 5px;
     }
+    .top-title h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    .concept-wrapper {
+        height: 700px;
+        position: static;
+        padding-top: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .concept-wrapper .container {
+        position: static;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .concept-title h2 {
+        font-size: 20px;
+        transform: rotate(0deg);
+        position: static;
+    }    
+    .concept-images {
+        position: static;
+        top: 0px;
+        left: 0px;
+    }
+    .concept-img {
+        width: 400px;
+    }
+    .concept-square {
+        display: none;
+    }
+    .concept-text {
+        position: static;
+        color: black;
+        bottom: auto;
+        right: auto;
+        padding-top: 30px;
+    }
+    .concept-text h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .concept-text p {
+        font-size: 15px;
+    }    
+    .staff-title h2 {
+        top: 0px;
+        left: 0px;
+        color: rgba(0, 0, 0, 0.7);
+        transform: rotate(0deg);
+        position: static;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .staff-scroll {
+        width: 200px;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+    }
+    .staff-card {
+        box-shadow: none;
+        scroll-snap-align: center;
+    }
+    .staff-img {
+        width:180px;
+    }
+    .btn-left:hover,
+    .btn-right:hover {
+        transform: none;
+    }
+    .left-img {
+        width: 20px;
+    }
+    .right-img {
+        width: 20px;
+    }
+    .menu-wrapper {
+        height: 540px;
+    }
+    .menu-title h2 {
+        position: static;
+        top: 0px;
+        right: 0px;
+        left: auto;
+        transform: rotate(0deg);
+        text-align: center;
+        padding-top: 30px;
+    }
+    .menu-img {
+        width: 550px;
+        top: 30px;
+        left: auto;
+        right: -140px;
+    }
+    
+    .menu-square {
+        display: none;
+    }
+    .menu-list {
+        gap: 20px;
+        left: 0;
+        top: 170px;
+        right: auto;
+        flex-direction: row;          
+    }
+    .menu-left h3 {
+        font-size: 13px;
+    }
+    .menu-left p {
+        font-size: 13px;
+    }
+    .menu-right h3{
+        font-size: 13px;
+    }
+    .menu-right p{
+        font-size: 13px;
+    }
+    .style-wrapper {
+      min-height: 550px;
+    }
+    .style-title h2 {
+        font-size: 20px;
+        transform: rotate(0deg);
+        top: 0px;
+        left: 0px;
+        position: static;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .style-list {
+        padding: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 20px 0 40px;
+        gap: 20px;
+    }
+    .style-images,
+    .more-style {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .style {
+        width: 130px;
+    }
+  
+    .more-style.show {
+        max-height: 800px;
+    }
+    .access-wrapper {
+        height: 350px;
+    }
+    .access-title h2 {
+        font-size: 20px;
+        bottom: auto;
+        top: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        position: static;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .access-contents {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 30px;
+        gap: 0px;
+    }
+    .access-address {
+        display: none;
+    }
+    .access-address h3 {
+        display: none;
+    }
+    .access-map img {
+        width: 200px;
+    }
+
 }
 
 
