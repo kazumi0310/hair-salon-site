@@ -397,6 +397,8 @@
     .staff-card {
         box-shadow: none;
         scroll-snap-align: center;
+        width: 180px;
+        flex: 0 0 180px;
     }
     .staff-img {
         width:180px;
@@ -479,9 +481,13 @@
     .style {
         width: 130px;
     }
-  
+    .more-style {
+        overflow: hidden;
+        pointer-events: none;
+    }
     .more-style.show {
         max-height: 800px;
+        pointer-events: auto;
     }
     .access-wrapper {
         height: 350px;
