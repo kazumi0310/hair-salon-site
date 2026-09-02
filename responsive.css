@@ -400,6 +400,12 @@
         width: 180px;
         flex: 0 0 180px;
     }
+    .staff-name {
+        font-size: 15px;
+    }
+    .staff-roll {
+        font-size: 13px;
+    }
     .staff-img {
         width:180px;
     }
