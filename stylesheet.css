@@ -420,3 +420,84 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
+
+.book-wrapper {
+  height: 1300px;
+}
+.book-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.book-heading {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.book-heading::before,
+.book-heading::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  background: black;
+}
+.heading-text {
+  letter-spacing: 10px;
+  padding: 0 30px;
+}
+.navigations {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 150px;
+}
+.navi-line {
+  font-size: 10px;
+}
+.navi-process h2 {
+  font-size: 30px;
+}
+.navi-process p {
+  font-size: 15px;
+}
+.contents-area {
+ padding-top: 50px;
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+.menu-check {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.form-item input {
+  font-size: 15px;
+  background-color: #F6F7F8;
+}
+#customer-mail {
+  width: 400px;
+}
+#customer-message {
+  font-size: 15px;
+  background-color: #F6F7F8;
+}
+#confirm {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+#confirm:hover {
+  transform: scale(1.1,1.1);
+}
+

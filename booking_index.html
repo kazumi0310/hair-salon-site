@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENTO HAIR DESIGN</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="header-list">
+                <a href="#top"><p>TOP</p></a>
+                <a href="#concept"><p>CONCEPT</p></a>
+                <a href="#staff"><p>STAFF</p></a>
+                <a href="#menu"><p>MENU</p></a>
+                <a href="#style"><p>STYLE</p></a>
+                <a href="#access"><p>ACCESS</p></a>
+                <a class="btn-book" href="#"><p class="book-text"><i class="fa-solid fa-scissors"></i>BOOK NOW</p></a>
+                <a class="btn-insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="book-wrapper">
+        <div class="container">
+            <div class="book-area">
+                <div class="book-heading">
+                    <div class="heading-text"><h1>✄BOOKING✄</h1></div>
+                </div>
+                <div class="navi-line"><p>●────────────────────○────────────────────○</p></div>
+                <div class="navigations">
+                    <div class="navi-process">
+                        <h2>❶</h2>
+                        <p>予約内容</p>
+                    </div>
+                    <div class="navi-process">
+                        <h2>②</h2>
+                        <p>予約確認</p>
+                    </div>
+                    <div class="navi-process">
+                        <h2>③</h2>
+                        <p>予約完了</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="book-contents">
+            <div class="container">
+                <form class="contents-area" action="#" method="post">
+                    <div class="form-item">
+                        <label for="customer-name"><h3>お名前*</h3></label>
+                        <input id="customer-name" name="customer-name" type="text" required>
+                    </div>
+                    <div class="form-item">
+                    <label for="customer-tel"><h3>TEL*</h3></label>
+                    <input id="customer-tel" name="customer-tel" type="tel" required>
+                    </div>
+                    <div class="form-item">
+                    <label for="customer-mail"><h3>MAIL</h3></label>
+                    <input id="customer-mail" name="customer-mail" type="email">
+                    </div>
+                    <div class="form-item">
+                        <h3>MENU</h3>
+                        <div class="menu-check">
+                            <label>
+                                <input type="checkbox" name="menu" value="cut">
+                                CUT
+                            </label>
+                            <label>
+                                <input type="checkbox" name="menu" value="color">
+                                COLOR
+                            </label>
+                            <label>
+                                <input type="checkbox" name="menu" value="perm">
+                                PERM
+                            </label>
+                            <label>
+                                <input type="checkbox" name="menu" value="treatment">
+                                TREATMENT
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="customer-stylist"><h3>STYLIST</h3></label>
+                        <select id="customer-stylist" name="stylist">
+                            <option value=""></option>
+                            <option value="kota">KOTA KOBAYASHI</option>
+                            <option value="ayaka">AYAKA KOBAYASHI</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="customer-date"><h3>DATE</h3></label>
+                        <select id="customer-date" name="date">
+                            <option value=""></option>
+                            <option value="10/10">10/10(土)</option>
+                            <option value="10/13">10/13(火)</option>
+                            <option value="10/14">10/14(水)</option>
+                            <option value="10/16">10/16(金)</option>
+                            <option value="10/18">10/18(日)</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="customer-time"><h3>TIME</h3></label>
+                        <select id="customer-time" name="time">
+                            <option value=""></option>
+                            <option value="10:00">10:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="customer-message"><h3>MESSAGE</h3></label>
+                        <textarea id="customer-message" name="customer-message" rows="10" cols="60"></textarea><br>
+                    </div>
+                    <div class="form-item">
+                        <input id="confirm" name="confirm" type="submit" value="CONFIRM">
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </div> 
+  </body>
+  </html>
