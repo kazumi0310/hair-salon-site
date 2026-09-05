@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="main.js" defer></script>
+    <script src="booking.js" defer></script>
   </head>
   <body>
     <header>
         <div class="container">
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="header-list">
-                <a href="#top"><p>TOP</p></a>
-                <a href="#concept"><p>CONCEPT</p></a>
-                <a href="#staff"><p>STAFF</p></a>
-                <a href="#menu"><p>MENU</p></a>
-                <a href="#style"><p>STYLE</p></a>
-                <a href="#access"><p>ACCESS</p></a>
-                <a class="btn-book" href="#"><p class="book-text"><i class="fa-solid fa-scissors"></i>BOOK NOW</p></a>
+                <a href="index.html#top"><p>TOP</p></a>
+                <a href="index.html#concept"><p>CONCEPT</p></a>
+                <a href="index.html#staff"><p>STAFF</p></a>
+                <a href="index.html#menu"><p>MENU</p></a>
+                <a href="index.html#style"><p>STYLE</p></a>
+                <a href="index.html#access"><p>ACCESS</p></a>
+                <a class="btn-book" href="booking.html"><p class="book-text"><i class="fa-solid fa-scissors"></i>BOOK NOW</p></a>
                 <a class="btn-insta" href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
@@ -30,20 +36,17 @@
                 <div class="book-heading">
                     <div class="heading-text"><h1>✄BOOKING✄</h1></div>
                 </div>
-                <div class="navi-line"><p>●────────────────────○────────────────────○</p></div>
+                <div class="navi-line"><h2>❶──────②──────③</h2></div>
                 <div class="navigations">
                     <div class="navi-process">
-                        <h2>❶</h2>
                         <p>予約内容</p>
                     </div>
                     <div class="navi-process">
-                        <h2>②</h2>
                         <p>予約確認</p>
                     </div>
                     <div class="navi-process">
-                        <h2>③</h2>
                         <p>予約完了</p>
-                    </div>        
+                    </div>       
                 </div>
             </div>
         </div>
@@ -118,7 +121,9 @@
                         <textarea id="customer-message" name="customer-message" rows="10" cols="60"></textarea><br>
                     </div>
                     <div class="form-item">
-                        <input id="confirm" name="confirm" type="submit" value="CONFIRM">
+                        <div class="btn-confirm">
+                            <input id="confirm" name="confirm" type="submit" value="CONFIRM">
+                        </div>
                     </div>
                 </form>
             </div>        
