@@ -610,6 +610,18 @@
     .thanks p {
         font-size: 15px;
     }
+    #customer-menu input{
+        font-size: 15px;
+    }
+    #customer-stylist option{
+        font-size: 15px;
+    }
+    #customer-date option{
+        font-size: 15px;
+    }
+    #customer-time option{
+        font-size: 15px;
+    }
 }
 
 
