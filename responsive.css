@@ -583,6 +583,7 @@
         padding-top: 20px;
         padding-bottom: 50px;
     }
+    
 
 
     .confirm-wrapper {
@@ -593,6 +594,12 @@
     }
     .confirm-item h3 {
         font-size: 15px;
+    }
+    #confirm-mail {
+    overflow-wrap: anywhere;
+    }
+    #confirm-message {
+    overflow-wrap: anywhere;
     }
 
     .thanks p {
