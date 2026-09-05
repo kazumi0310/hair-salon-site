@@ -569,7 +569,9 @@
     .navi-process p {
         display: none;
     }
-    
+    .contents-area {
+        padding-bottom: 100px;
+    }   
     .form-item h3 {
         font-size: 15px;
     }
@@ -589,8 +591,11 @@
     .confirm-wrapper {
         min-height: 900px;
     }
+    .confirm-text {
+        padding-bottom: 100px;
+    }
     #customer-message {
-        overflow: wrap;
+      overflow: wrap;
     }
     .confirm-item h3 {
         font-size: 15px;

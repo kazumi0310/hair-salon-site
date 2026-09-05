@@ -551,7 +551,9 @@ header {
 #submit-button:hover {
   transform: scale(1.1,1.1); 
 }
-
+#customer-message {
+  overflow: wrap; 
+}
 .complite-wrapper {
   height: 600px;
 }
