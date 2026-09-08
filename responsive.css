@@ -4,7 +4,7 @@
     } 
     .container {
         width: 80%;
-  } 
+    } 
     header {
         right: auto;
         width: 100vw;
@@ -148,7 +148,11 @@
         z-index: 2;
     }
     .staff-scroll {
-        width: 500px;
+        width: 480px;
+    }
+    .staff-card {
+        width: 200px;
+        flex: 0 0 200px;
     }
     .staff-img {
         width:200px;
@@ -239,33 +243,51 @@
     }
     .access-wrapper {
         height: 450px;
+        z-index: 0;
     }
-    .access-title h2 {
+     .access-title h2 {
         font-size: 20px;
-        bottom: auto;
-        top: 80px;
-        right: 0px; 
-        color: rgba(0, 0, 0, 0.7);
         transform: rotate(90deg);
-        z-index: 2;
+        color: rgba(0, 0, 0, 0.7);
+        bottom: auto;
+        left: auto;
+        top: 80px;
+        right: -15px;
+        z-index: 1;
     }
     .access-title h2::before {
-        content:"04 ┃ "
+        content:"05 ┃ "
     }
     .access-contents {
         display: flex;
-        padding-left: 0;
-        padding-top: 70px;
-        gap: 50px;
+        padding-left: 0px;
+        padding-right: 30px;
+        padding-top: 80px;
+        gap: 20px;
+        z-index: 2;
     }
     .access-address {
-        font-size: 15px;
+        padding-top: 0px;
+        gap: 10px;
     }
-    .access-address h3 {
+    .address-text h3 {
         font-size: 20px;
     }
-    .access-map img {
+    .address-text {
+        font-size: 15px;
+    }
+    .address-tel {
+        font-size: 15px;
+    }
+    .address-open {
+        font-size: 15px;
+    }
+    .address-close {
+        font-size: 15px;
+    }
+    iframe {
         width: 300px;
+        height: 300px;
     }
 
 
@@ -287,8 +309,8 @@
     .navi-process p {
         font-size: 8.5px;
     }
-
 }
+
 @media(max-width:767px) {
     .container {
         width: 90%;
@@ -516,7 +538,7 @@
         pointer-events: auto;
     }
     .access-wrapper {
-        height: 350px;
+        height: 500px;
     }
     .access-title h2 {
         font-size: 20px;
@@ -531,20 +553,25 @@
 
     .access-contents {
         position: static;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 30px;
-        gap: 0px;
+        gap: 20px;
     }
     .access-address {
+        gap: 10px;
+    }
+    .address-text {
         display: none;
     }
-    .access-address h3 {
-        display: none;
+    .address-close {
+        border-bottom: none;
     }
-    .access-map img {
+    iframe {
         width: 200px;
+        height: 200px;
     }
 
 

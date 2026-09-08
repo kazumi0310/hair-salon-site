@@ -24,18 +24,38 @@ setInterval(() => {
 const btnLeft = document.querySelector(".btn-left");
 const btnRight = document.querySelector(".btn-right");
 const staffScroll = document.querySelector(".staff-scroll");
+const staffCards = document.querySelectorAll(".staff-card");
 btnRight.addEventListener("click",function(){
-    staffScroll.scrollBy({
-    left: staffScroll.clientWidth,
-    behavior:"smooth"
-});
+    if(window.innerWidth <= 767){
+        const scrollAmount = staffCards[1].offsetLeft - staffCards[0].offsetLeft;
+
+        staffScroll.scrollBy({
+            left: scrollAmount,
+            behavior:"smooth"
+        });
+    } else { 
+        staffScroll.scrollTo({
+            left: staffScroll.scrollWidth - staffScroll.clientWidth,
+            behavior:"smooth"            
+        });
+    }
 });
 btnLeft.addEventListener("click",function(){
-    staffScroll.scrollBy({
-    left: -staffScroll.clientWidth,
-    behavior:"smooth"
+    if(window.innerWidth <= 767) {
+        const scrollAmount = staffCards[1].offsetLeft - staffCards[0].offsetLeft;
+
+            staffScroll.scrollBy({
+            left: -scrollAmount,
+            behavior:"smooth"
+        });
+    } else {
+        staffScroll.scrollTo({
+            left:0,
+            behavior:"smooth"
+        });
+    }
 });
-});
+
 const btnView = document.querySelector(".btn-view");
 const moreStyle = document.querySelector(".more-style");
 btnView.addEventListener("click", ()=>{
